@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background-color: yellow;
+      background-color: white;
     }
 
     @media only screen and (max-width: 600px) {
@@ -20,14 +20,21 @@
 
   <!-- https://www.w3schools.com/cssref/css3_pr_mediaquery.asp -->
 
-  <div>
+  <div style="
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  ">
     <main style="
       border: 1px solid black;
       width: 500px;
       height: 600px;
+      order: 2;
     ">MAIN PANEL</main>
     <aside style="
-      width: 100px
+      width: 100px;
+      height: 600px;
     ">LEFT PANEL</aside>
   </div>
 
